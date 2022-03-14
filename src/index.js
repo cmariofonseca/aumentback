@@ -1,19 +1,17 @@
-import express from 'express';
-
-// Initializations
-const app = express();
+import app from './config/index.config'
+import './database/index.database'
 
 // Settings
 app.set('port', process.env.PORT || 3000);
 
 // Middlewares
-app.use(express.urlencoded({ extended: false }));
+
 
 // Global variables
 
+// Llamado a base de datos
 
-// Routes
-app.use(require('./routes/index'));
+
 
 // Static files
 
