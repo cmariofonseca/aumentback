@@ -1,5 +1,6 @@
 import { connect } from 'mongoose';
 
+// Conexión con base de datos MongoDB Atlas
 (async () => {
   try {
     const db = await connect('mongodb+srv://usuario:usuario@aumentest.hbat1.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
